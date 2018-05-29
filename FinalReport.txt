@@ -1,0 +1,19 @@
+Bianca Roxas
+CSI 405 Final Project Report
+08 May 2018
+
+	For my final project, I have decided to do a mock up of a music playlist/iPod. With that, I created 6 classes: Menu, iPod, Album, Artist, Song, and Main. I went with the Menu class to be abstract filled with abstract methods which I implemented in iPod along with other non abstract methods.  The Song, Artist, and Album classes are created to implement different objects.
+
+Methods Used & Why:
+play() : This was just a mock playing method to make a “sound” of something playing. I had created it to demonstrate polymorphism as I adjusted the code within each class (Song, Artist, Album) where it will play according to which a user prefers to play something by. 
+listRequested(T[]x) : This is to demonstrate generics. I created this code in order to list the requested array we want whether it be integers, objects, chars, etc. In my code I used it to list arrays of the Artists & Albums in my playlist.
+removeSong(LinkedList<Song> l, int n) :  This is an abstract method. This will remove a certain track number from my song from my Song list l.
+shuffle(LinkedList<Song> l) : This is another abstract method that just shuffles the playlist given
+display(LinkedList<Song> l) : This is an abstract method too, similar to listRequested, however it is designated only for LinkedList<Song> l. No other objects.
+
+Classes:
+My other classes: Song, Artist, and Album are all fairly similar. As they just have constructors in order to collect the names for objects.
+However, in my Song class I demonstrated composition as it must also take in the artist and album info. A song cannot exist without them.
+
+Main: 
+As we noticed, I did not create an add method, as I just implemented my linked list in the driver class. Here, I also tested out all of my methods to make sure they work and function accordingly.
